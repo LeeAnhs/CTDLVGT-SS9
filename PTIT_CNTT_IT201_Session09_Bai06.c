@@ -13,11 +13,11 @@ Node* createNode(int data) {
 }
 Node* removeNodeHead(Node* head, int data) {
     if (head == NULL) {
-        return NULL; // Danh sách rỗng
+        return NULL;
     }
     Node* temp = head;
-    head = head->next; // Di chuyển đầu danh sách đến node tiếp theo
-    free(temp); // Giải phóng bộ nhớ của node đã xóa
+    head = head->next;
+    free(temp); 
     return head;
 }
 int main(){
